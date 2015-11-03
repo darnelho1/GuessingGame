@@ -58,7 +58,7 @@ else {
   counter++;
 }
 
-if (parseInt(userAnswer5 === 11)){
+if ((userAnswer5 === '11') || (userAnswer5 ==='eleven') || (userAnswer5==='Eleven')){
   alert("You are correct I have lived here for " +userAnswer5+ " years.");
 }
 
