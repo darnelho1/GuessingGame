@@ -75,7 +75,7 @@ if (counter>=4){
 
 
   while(result){
-  var guess = Number(prompt("Guess the number between 0-10"))
+  var guess = Number(prompt("Guess the number between 0-15"))
   if  (guess > number){
       alert("The actual number is lower than your guess try again")
     }
