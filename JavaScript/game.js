@@ -93,3 +93,6 @@ if (counter>=4){
   }
   play=false;
 }
+
+document.write("<h2> Your final score was " +counter+ "/5 Refresh the Page to play again.</h2>");
+
