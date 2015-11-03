@@ -11,3 +11,5 @@ How do you comfort a JavaScript bug????????
 
 You console it!
 
+Joke Source: http://elijahmanor.com/front-end-web-dev-jokes/.
+
