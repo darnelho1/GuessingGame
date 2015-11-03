@@ -16,6 +16,7 @@ var userAnswer1 = prompt("I currently live in Seattle but I grew up in Massachus
 var userAnswer2 = prompt("I was born in 1983 can you guess which month?");
 var userAnswer3 = prompt("I have a child who is less than a year old can you guess how many months old she is?");
 var userAnswer4 = prompt("How old am I?")
+var userAnswer5 = prompt("How many years have i lived in Seattle?")
 
 if ((userAnswer1 === "Boston") || (userAnswer1 === "bos") || (userAnswer1 === "boston")){
   alert("You are correct I was born in " + answer1);
@@ -57,9 +58,16 @@ else {
   counter++;
 }
 
-alert("You got " + counter + "/4 correct");
+if (parseInt(userAnswer5 === 11)){
+  alert("You are correct I have lived here for " +userAnswer5+ " years.");
+}
 
-if (counter>=3){
+else{
+  alert("No I haven't lived in Seattle for " +userAnswer5+ " years. I have lived here for 11");
+}
+alert("You got " + counter + "/5 correct");
+
+if (counter>=4){
   var bonus = confirm("Great Job! " + userName + " You scored high enough for the bonus round. Would you like to play the bonus? (Press ok to play bonus round)");
   while (bonus){
     var result = true
