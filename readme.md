@@ -13,3 +13,10 @@ You console it!
 
 Joke Source: http://elijahmanor.com/front-end-web-dev-jokes/.
 
+UPDATE - ADD FUNCTIONS
+
+The resulting code was a collaborative effort.
+
+Driver: Anthony Casson
+Navigator: Darnell Holder
+
