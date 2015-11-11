@@ -37,19 +37,24 @@ var question1 = function() {
   var userAnswer1 = prompt(arrayQuestions[0]);
   if((userAnswer1.toUpperCase() === "BOSTON") || (userAnswer1.toUpperCase() === "BOS")) {
     document.getElementById('question1').innerHTML= arrayAnswerCorrect[0];
-     scoreIt++;
+    document.getElementById('img1').src = "images/correct.png";
+    scoreIt++;
   }else {
     document.getElementById('question1').innerHTML= arrayAnswerIncorrect[0];
+    document.getElementById('img1').src = "images/incorrect.png";
   };
 }();//IIFE
+
 
 var question2 = function() {
   var userAnswer2 = prompt(arrayQuestions[1]);
   if((userAnswer2.toUpperCase() === "OCTOBER")||(userAnswer2.toUpperCase() === "OCT")) {
     document.getElementById('question2').innerHTML=arrayAnswerCorrect[1];
+    document.getElementById('img2').src = "images/correct.png";
     scoreIt++;
   }else {
     document.getElementById('question2').innerHTML=arrayAnswerIncorrect[1];
+    document.getElementById('img2').src = "images/incorrect.png";
   };
 }();
 
@@ -57,9 +62,11 @@ var question3 = function() {
   var userAnswer3 = prompt(arrayQuestions[2]);
   if((userAnswer3 === "7")||(userAnswer3.toUpperCase() === "seven")) {
     document.getElementById('question3').innerHTML=arrayAnswerCorrect[2];
+    document.getElementById('img3').src = "images/correct.png";
     scoreIt++;
   }else {
     document.getElementById('question3').innerHTML=arrayAnswerIncorrect[2];
+    document.getElementById('img3').src = "images/incorrect.png";
   };
 }();
 
@@ -67,9 +74,11 @@ var question4 = function() {
   var userAnswer4 = Number(prompt(arrayQuestions[3]));
   if(userAnswer4 === 32) {
     document.getElementById('question4').innerHTML=arrayAnswerCorrect[3];
+    document.getElementById('img4').src = "images/correct.png";
     scoreIt++;
   }else {
     document.getElementById('question4').innerHTML=arrayAnswerIncorrect[3];
+    document.getElementById('img4').src = "images/incorrect.png";
   };
 }();
 
@@ -77,9 +86,11 @@ var question5 = function() {
   var userAnswer5 = prompt(arrayQuestions[4]);
   if ((userAnswer5 === '11') || (userAnswer5.toUpperCase() ==='ELEVEN')) {
     document.getElementById('question5').innerHTML=arrayAnswerCorrect[4];
+    document.getElementById('img5').src = "images/correct.png";
     scoreIt++;
   }else {
     document.getElementById('question5').innerHTML=arrayAnswerIncorrect[4];
+    document.getElementById('img5').src = "images/incorrect.png";
   };
 }();
 
@@ -95,10 +106,13 @@ var bonusRound = function() {
        var guess = Number(prompt(arrayQuestions[5]));
         if(guess > numberRandom) {
           document.getElementById('bonusA').innerHTML=arrayAnswerIncorrect[5];
+          document.getElementById('imgB').src = "images/incorrect.png";
         }else if (guess < numberRandom) {
           document.getElementById('bonusA').innerHTML=arrayAnswerIncorrect[6];
+          document.getElementById('imgB').src = "images/incorrect.png";
         }else {
           document.getElementById('bonusA').innerHTML=arrayAnswerCorrect[5];
+          document.getElementById('imgB').src = "images/correct.png";
           result=0;
     };
   };
