@@ -1,34 +1,33 @@
 <!DOCTYPE html>
+<head>
+<title>A Guessing Game</title>
+<link rel="stylesheet" type="text/css" href="">
+</head>
 
-<html>
-<HEAD>
-<TITLE>A Guessing Game</TITLE>
-</HEAD>
-
-<BODY>
+<body>
   <h1>You Don't Know Jack(Or is my name Darnell...) A Guessing Game.</h1>
 
   <p>How well do you know me? The questions listed below will be prompted to you. Answer these questions to find out how well you know my backstory. Get enough questions right and you will unlock a bonus level (A number guessing game).  </p>
 
-  <p style="font-size: x-large;text-align: center"}>Good Luck</p>
+  <p>Good Luck</p>
 
-  <h3>Question 1: I currently live in Seattle but I grew up in Massachusetts. What city in Massachusetts did I grow up in?</h3>
-    <p id="question1"></p>
+  <h3><span class="qHead">Question 1:</span> I currently live in Seattle but I grew up in Massachusetts. What city in Massachusetts did I grow up in?</h3>
+    <p id="question1" class="rightAnswer" class="wrongAnswer"></p>
     <img id="img1" src="" width="100">
 
-  <h3>Question 2: I was born in 1983 can you guess which month?</h3>
+  <h3><span class="qHead">Question 2:</span> I was born in 1983 can you guess which month?</h3>
     <p id="question2"></p>
     <img id="img2" src="" width="100">
 
-  <h3>Question 3: I have a child who is less than a year old can you guess how many months old she is?</h3>
+  <h3><span class="qHead">Question 3:</span> I have a child who is less than a year old can you guess how many months old she is?</h3>
     <p id="question3"></p>
     <img id="img3" src="" width="100">
 
-  <h3>Question 4: How old am I?</h3>
+  <h3><span class="qHead">Question 4:</span> How old am I?</h3>
     <p id="question4"></p>
     <img id="img4" src="" width="100">
 
-  <h3>Question 5: How many years have i lived in Seattle?</h3>
+  <h3><span class="qHead">Question 5:</span> How many years have i lived in Seattle?</h3>
     <p id="question5"></p>
     <img id="img5" src="" width="100">
 
@@ -36,6 +35,6 @@
     <p id="bonusA"></p>
     <img id="imgB" src="" width="100">
 
-<script src="javascript/game.js"></script>
+<script src="JavaScript/game.js"></script>
 
-</BODY>
+</body>
