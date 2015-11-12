@@ -46,7 +46,7 @@ var question1 = function() {
     document.getElementById('question1').style.color = "red";
     document.getElementById('img1').src = "images/incorrect.png";
   };
-}();//IIFE
+  }();
 
 
 var question2 = function() {
@@ -61,7 +61,9 @@ var question2 = function() {
     document.getElementById('question2').style.color = "red";
     document.getElementById('img2').src = "images/incorrect.png";
   };
-}();
+} 
+setTimeout(question2, 100);
+
 
 var question3 = function() {
   var userAnswer3 = prompt(arrayQuestions[2]);
@@ -75,7 +77,8 @@ var question3 = function() {
     document.getElementById('question3').style.color = "red";
     document.getElementById('img3').src = "images/incorrect.png";
   };
-}();
+} 
+setTimeout(question3, 200);
 
 var question4 = function() {
   var userAnswer4 = Number(prompt(arrayQuestions[3]));
@@ -89,7 +92,9 @@ var question4 = function() {
     document.getElementById('question4').style.color = "red";
     document.getElementById('img4').src = "images/incorrect.png";
   };
-}();
+}
+setTimeout(question4, 300);
+
 
 var question5 = function() {
   var userAnswer5 = prompt(arrayQuestions[4]);
@@ -103,9 +108,14 @@ var question5 = function() {
     document.getElementById('question5').style.color = "red";
     document.getElementById('img5').src = "images/incorrect.png";
   };
-}();
+} 
+setTimeout(question5, 400);
 
-alert("You got " + scoreIt + "/5 correct");
+var alertScore = function() {
+  document.getElementById('alertScore').innerHTML = "Your score was " +scoreIt+ "/5. Refresh the Page to play again.";
+  //alert("You got " + scoreIt + "/5 correct");
+}
+setTimeout(alertScore, 500);
 
 var bonusRound = function() {
   if (scoreIt >= 4) {
@@ -133,6 +143,7 @@ var bonusRound = function() {
 
   };
 
-}();
+} 
+setTimeout(bonusRound, 1000);
 
-document.write("<h2> Your final score was " +scoreIt+ "/5. Refresh the Page to play again.</h2>");
+
