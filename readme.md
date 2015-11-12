@@ -20,3 +20,9 @@ The resulting code was a collaborative effort.
 Driver: Anthony Casson
 Navigator: Darnell Holder
 
+UPDATE - CSS & FUNCTION MODS
+
+All functions were modified to include setTimeouts to account for image rendering issues. Basic CSS styling was applied.
+
+Driver: Anthony Casson
+Navigator: Darnell Holder
